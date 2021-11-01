@@ -1,0 +1,37 @@
+{
+  "name": "tailwind-objects",
+  "version": "0.1.0-alpha.1",
+  "description": "Style objects for tailwind.",
+  "main": "src/index.js",
+  "repository": "https://github.com/alexander-schranz/tailwind-objects",
+  "scripts": {
+    "dev": "concurrently \"npm run serve\" \"npm run watch\"",
+    "serve": "live-server .",
+    "watch": "npm run build -- -w",
+    "build": "tailwindcss -o dist/tailwind.css"
+  },
+  "keywords": [
+    "tailwind",
+    "tailwind-plugin",
+    "stack",
+    "inline",
+    "bleed",
+    "container",
+    "media",
+    "grid"
+  ],
+  "author": "Alexander Schranz",
+  "license": "MIT",
+  "peerDependencies": {
+    "tailwindcss": ">=3.0.0 || >= 3.0.0-alpha.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.0.2",
+    "chokidar-cli": "^2.1.0",
+    "clean-css": "^4.2.1",
+    "concurrently": "^5.3.0",
+    "live-server": "^1.2.1",
+    "postcss": "^8.1.7",
+    "tailwindcss": "next"
+  }
+}
